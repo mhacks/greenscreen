@@ -15,6 +15,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 pathLib = require "path"
 
 module.exports = (app) ->
+
+  app.get "/", (req, res) ->
+    res.sendfile pathLib.resolve("/chromecasts/8266c0ca6a4520c811273af736000a19")
+    
   app.get "/chromecasts/new", (req, res) ->
     res.sendfile pathLib.resolve("#{__dirname}/../../../public/index.html")
 
