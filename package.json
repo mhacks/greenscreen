@@ -9,6 +9,7 @@
     "webdriver": "webdriver-manager start",
     "bundle": "node_modules/commonjs-everywhere/bin/cjsify -o public/js/gscreen.js src/client/gscreen.coffee -w",
     "seed": "coffee scripts/seed",
+    "mhacks": "coffee scripts/mhacks",
     "create-config": "cp config.template.json config.json && cp public/js/gscreen-config.template.js public/js/gscreen-config.js"
   },
   "repository": {
