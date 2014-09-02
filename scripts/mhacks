@@ -1,0 +1,10 @@
+#!/usr/bin/env coffee
+
+Channel = require("../src/server/models/channel")
+Receiver = require("../src/server/models/receiver")
+db = require("../src/server/db")
+
+# new Channel({name: "Channel 1"}).save()
+new Channel({name: "General"}).save()
+
+new Receiver({name: "General Channel", location: "Everywhere"}).save()
